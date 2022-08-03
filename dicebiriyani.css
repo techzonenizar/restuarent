@@ -98,18 +98,33 @@ body{
     position: absolute;
     bottom: 0px;
     margin-left: 50%;
+    /*background-image: url(./image/banner-bg.png);*/
 }
 .sub_half_circle{
-    background-color: #e4f0fa;
-    height: 130%;
-    width: 90%;
+    /*background-color: #e4f0fa;*/
+    height: 100%;
+    width: 94%;
     float: right;
-    border-radius: 99% 0px 0px 100%;
-    margin-top: -75px;
-    border: 10px solid #8784840d;
-    border-style: double;
+    transition: 1s;
+    background-image: url(./image/banner-bg.png);
+    /*background-image: url(./image/output-onlinepngtools2.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: 1s;
 }
+
+.sub_half_circle_dark{
+    height: 100%;
+    width: 94%;
+    float: right;
+    transition: 1s;
+    background-image: url(./image/output-onlinepngtools2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    transition: 1s;
+}
+
 
 /*header section*/
 .section_header{
@@ -247,7 +262,18 @@ body{
 /*style for sliders*/
 .section_slider{
     position: absolute;
-    /*background-color: #00000054;*/
+    background-color: #e4f0fa1f;
+    height: 100%;
+    width: 97.5%;
+    bottom: 0px;
+    margin-left: 2.5%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.section_slider_dark{
+    background-color: transparent;
+    position: absolute;
     height: 100%;
     width: 97.5%;
     bottom: 0px;
